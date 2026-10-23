@@ -20,7 +20,7 @@ def get_second_name(new_html):
     return new_name
 
 
-user = User(1, config.user_id, config.api_key, email='limio.ananas@gmail.com', password='12345678')
+user = User(1, config.user_id, config.api_key, email=config.email, password=config.password)
 categories = ['Инстаграм',
               'ВКонтакте',
               'Ютуб',

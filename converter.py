@@ -3,7 +3,7 @@ from users.user import User
 import config.config as config
 
 
-user = User(1, config.user_id, config.api_key, email='limio.ananas@gmail.com', password='12345678')
+user = User(1, config.user_id, config.api_key, email=config.email, password=config.password)
 services = user.get_services()['data']
 
 with open('local_base/main.json') as file:
